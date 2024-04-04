@@ -32,11 +32,12 @@ def database(x,y,z):
       data = (x,y,z)
       cursor= connection.cursor()
       cursor.execute(Query,data)
+      print("Data is inserted successfully")
       connection.commit()
       cursor.close()
  
     except mysql.connector.Error as error:
-     print(error)
+     print("Mysql error is "+error)
     
     finally:
       if connection.is_connected():
@@ -50,6 +51,7 @@ def database1(x,y,z):
       data = (x,y,z)
       cursor= connection.cursor()
       cursor.execute(Query,data)
+      print("Data is inserted successfully")
       connection.commit()
       cursor.close()
  
@@ -68,6 +70,7 @@ def database2(x,y,z):
       data = (x,y,z)
       cursor= connection.cursor()
       cursor.execute(Query,data)
+      print("Data is inserted successfully")
       connection.commit()
       cursor.close()
  
@@ -86,6 +89,7 @@ def database3(x,y,z):
       data = (x,y,z)
       cursor= connection.cursor()
       cursor.execute(Query,data)
+      print("Data is inserted successfully")
       connection.commit()
       cursor.close()
  
